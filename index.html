@@ -21,8 +21,8 @@
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-expand-lg rounded-pill">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="#">Devanshi</a>
+                    <div class="container-fluid px-3">
+                        <a class="navbar-brand fs-3" href="#">Devanshi</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,9 @@
                                     <a class="nav-link active" href="#contactme">Contact Me</a>
                                 </li>
                             </ul>
-                            <!-- <button class="btn btn-primary rounded-pill">Download CV</button> -->
+                            <a href="assets/resume/Devanshi_Parekh_Resume.pdf" download>
+                                <button class="btn btn-primary py-2 px-3 rounded-pill">Download Resume</button>
+                            </a>
                         </div>
                     </div>
                 </nav>
@@ -61,16 +63,18 @@
     <main>
         <!-- Hero Section Start -->
         <section id="hero" class="hero">
-            <div class="container-fluid">
+            <div id="particles-js"></div>
+
+            <div class="container-fluid hero-content">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="cd-intro">
                             <h2 class="cd-headline slide">
                                 <span>I Am Devanshi Parekh</span>
                                 <span class="cd-words-wrapper">
-                                    <b class="is-visible">Full Stack Devloper</b>
-                                    <b>Frontend Devloper</b>
-                                    <b>Backend Devloper</b>
+                                    <b class="is-visible">Full Stack Developer</b>
+                                    <b>Frontend Developer</b>
+                                    <b>Backend Developer</b>
                                 </span>
                             </h2>
                         </div>
@@ -83,7 +87,7 @@
         <!-- About Section Start -->
         <section id="about" class="about">
             <div class="container-fluid">
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items-center">
                     <div class="col-md-12">
                         <div class="title">
                             <h2>About Me</h2>
@@ -91,12 +95,14 @@
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="about-img">
-                            <img src="./assets/images/profile.jpeg" alt="Devanshi" class="img-fluid rounded-3" width="300px">
+                            <img src="./assets/images/profile.jpeg" alt="Devanshi" class="img-fluid rounded-3"
+                                width="350px">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="mt-4">
-                            <p style="text-align: justify;">I am a passionate Full Stack Developer with a strong
+                        <div class="about-box">
+                            <p style="text-align: justify;" class="mb-2">I am a passionate Full Stack Developer with a
+                                strong
                                 foundation in building responsive,
                                 user-focused web applications. I specialize in creating clean, structured, and efficient
                                 solutions that provide seamless user experiences across devices.
@@ -479,6 +485,7 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="./assets/js/headline.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
         window.addEventListener("scroll", function () {
 
@@ -495,6 +502,25 @@
                 });
             }
 
+        });
+    </script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80 },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5 },
+                size: { value: 3 },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: "#ffffff",
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: { enable: true, speed: 3 }
+            }
         });
     </script>
 </body>
